@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lost &amp; Found | Монгол Улсын Их Сургууль</title>
+    <meta name="description" content="Монгол Улсын Их Сургуулийн Lost &amp; Found систем">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header role="banner"><div class="bar">
+  <div class="brand" onclick="go('home')">
+    <img id="hicon" alt="" height="40">
+    <div>МОНГОЛ УЛСЫН ИХ СУРГУУЛЬ<small>Lost &amp; Found — Алдагдсан эд зүйлийн систем</small></div>
+  </div>
+  <nav id="nav" aria-label="Үндсэн цэс"></nav>
+</div></header>
+
+<main id="view" tabindex="-1"></main>
+<footer>© Монгол Улсын Их Сургууль · Lost &amp; Found · Бие даалтын төсөл</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Дэлгэрэнгүй мэдээлэл"><div class="box" id="box"></div></div>
+<div id="toast" role="status" aria-live="polite"></div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
